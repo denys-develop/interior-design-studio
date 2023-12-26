@@ -1,0 +1,115 @@
+.choose {
+    padding: 25px 0 70px;
+    overflow: hidden;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @media (max-width: $breakpoint992) {
+           flex-wrap: wrap;
+        }
+    }
+
+    .choose__item {
+
+        &.left__item {
+            flex: 0 1 470px;
+            padding-top: 60px;
+            @media (max-width: $breakpoint1200) {
+                flex: 0 1 510px;  
+            }
+            @media (max-width: $breakpoint992) {
+                flex: 0 1 100%;  
+                padding-top: 0px;
+            }
+        } 
+
+        &.right__item {
+            padding-top: 50px;
+            position: relative;
+
+
+            @media (max-width: $breakpoint992) {
+                padding-top: 30px;
+            }
+
+
+            &::after {
+                content: '';
+                display: block;
+                width: 296px;
+                height: 307px;
+                background: rgba(53, 115, 110, 0.1);
+                border-radius: 20px;
+                position: absolute;
+                top: 176px;
+                left: -310px;
+                @media (max-width: $breakpoint992) {
+                   left: unset;
+                   top: unset;
+                   right: -2%;
+                   bottom: 10%;
+                   z-index: 1;
+                   background: rgba(53, 115, 110, 0.3);
+                }
+                @media (max-width: $breakpoint768) {
+                    width: 180px;
+                    height: 200px;
+                }
+            }
+
+        }
+    }
+
+    // .choose__img {
+
+    // }
+
+    .choose__icon {
+        position: absolute;
+        left: -80px;
+        top: -10px;
+        z-index: -1;
+    }
+}
+
+
+
+
+.why {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    @media (max-width: $breakpoint992) {
+        margin-top: 35px;
+    }
+
+    .why__item {
+        flex: 0 1 215px;
+        @media (max-width: $breakpoint992) {
+            flex: 0 1 46%;
+        }
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+        }
+    }
+    
+    .why__title {
+        margin-top: 3px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.57;
+        color: #2F2F2F;
+    }
+    
+    .why__text {
+        margin-top: 9px;
+        line-height: 1.57;
+        color: #6A6A6A;
+    }
+}
+
+
+

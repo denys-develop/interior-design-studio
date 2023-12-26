@@ -1,0 +1,133 @@
+.footer {
+    background-color: #fff;
+    padding: 20px 0 32px;
+}
+
+.footer__logo {
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.footer__row {
+    display: flex;
+    gap: 65px;
+    @media (max-width: $breakpoint992) {
+        gap: 30px;
+    }
+    @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+    }
+}
+
+.footer__item {
+    &.left__item {
+        flex: 0 1 360px;
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+        }
+    }
+    &.right__item {
+        display: flex;
+        gap: 50px;
+        @media (max-width: $breakpoint992) {
+            gap: 30px;
+        }
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+        }
+        @media (max-width: $breakpoint480) {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}
+
+.footer__text {
+    line-height: 1.7;
+    color: #6A6A6A;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 60px;
+    @media (max-width: $breakpoint768) {
+        margin-top: 20px;
+    }
+
+    &__item { 
+        a {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #D9D9D9;
+            cursor: pointer;
+        }
+
+        svg {
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            svg {
+                scale: 1.2;
+            }
+        }
+    }
+}
+
+
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    @media (max-width: $breakpoint768) {
+        flex: 0 1 20%;
+    }
+    @media (max-width: $breakpoint480) {
+        flex: 0 1 45%;
+    }
+}
+
+.footer__link {
+    line-height: 1.1;
+    transition: color .3s ease;
+    &:hover {
+        color: #35736E;
+    }
+}
+
+
+.copy {
+    padding-top: 36px;
+    margin-top: 32px;
+    border-top: 1px solid #EFF2F1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 20px;
+    }
+}
+
+.copy__item {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.copy__link {
+    transition: color .3s ease;
+    &:hover {
+        color: #35736E;
+    }
+}
